@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C3D3FEA5-AC19-4EED-B8B8-0917F52165C1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication2</RootNamespace>
+    <AssemblyName>WindowsFormsApplication2</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v11.1, Version=11.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v11.1, Version=11.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v11.1, Version=11.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v11.1, Version=11.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v11.1, Version=11.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="app.config" />
+    <None Include="DataClasses1.dbml.layout">
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraForm2.resx">
+      <DependentUpon>XtraForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraUserControlDVAU.resx">
+      <DependentUpon>XtraUserControlDVAU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraUserControlDVDC.resx">
+      <DependentUpon>XtraUserControlDVDC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraUserControlDVGU.resx">
+      <DependentUpon>XtraUserControlDVGU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraUserControlQL.resx">
+      <DependentUpon>XtraUserControlQL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraUserControlQLDC.resx">
+      <DependentUpon>XtraUserControlQLDC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraUserControlQLGU.resx">
+      <DependentUpon>XtraUserControlQLGU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraUserControlQLHD.resx">
+      <DependentUpon>XtraUserControlQLHD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraUserControlQLHH.resx">
+      <DependentUpon>XtraUserControlQLHH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraUserControlQLKH.resx">
+      <DependentUpon>XtraUserControlQLKH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraUserControlQLNV.resx">
+      <DependentUpon>XtraUserControlQLNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraUserControlQLP.resx">
+      <DependentUpon>XtraUserControlQLP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraUserControlTC.resx">
+      <DependentUpon>XtraUserControlTC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraUserControlMD.resx">
+      <DependentUpon>XtraUserControlMD.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="DataClasses1.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\DataSources\NHANVIEN.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="XtraForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XtraForm2.Designer.cs">
+      <DependentUpon>XtraForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraUserControlDVAU.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="XtraUserControlDVAU.Designer.cs">
+      <DependentUpon>XtraUserControlDVAU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraUserControlDVDC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="XtraUserControlDVDC.Designer.cs">
+      <DependentUpon>XtraUserControlDVDC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraUserControlDVGU.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="XtraUserControlDVGU.Designer.cs">
+      <DependentUpon>XtraUserControlDVGU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraUserControlQL.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="XtraUserControlQL.Designer.cs">
+      <DependentUpon>XtraUserControlQL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraUserControlQLDC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="XtraUserControlQLDC.Designer.cs">
+      <DependentUpon>XtraUserControlQLDC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraUserControlQLGU.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="XtraUserControlQLGU.Designer.cs">
+      <DependentUpon>XtraUserControlQLGU.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraUserControlQLHD.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="XtraUserControlQLHD.Designer.cs">
+      <DependentUpon>XtraUserControlQLHD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraUserControlQLHH.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="XtraUserControlQLHH.Designer.cs">
+      <DependentUpon>XtraUserControlQLHH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraUserControlQLKH.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="XtraUserControlQLKH.Designer.cs">
+      <DependentUpon>XtraUserControlQLKH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraUserControlQLNV.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="XtraUserControlQLNV.Designer.cs">
+      <DependentUpon>XtraUserControlQLNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraUserControlQLP.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="XtraUserControlQLP.Designer.cs">
+      <DependentUpon>XtraUserControlQLP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraUserControlTC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="XtraUserControlTC.Designer.cs">
+      <DependentUpon>XtraUserControlTC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraUserControlMD.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="XtraUserControlMD.Designer.cs">
+      <DependentUpon>XtraUserControlMD.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
